@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="KGk-i7-Jjw" customClass="TripHistoryTVC" customModule="MyTaxi_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lu6-KQ-tdr">
+                        <rect key="frame" x="16" y="8" width="345" height="128"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ek7-2J-Im5">
+                                <rect key="frame" x="12" y="12" width="235" height="62"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aH2-6e-XVi">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="28"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redDot" translatesAutoresizingMaskIntoConstraints="NO" id="Wma-0B-Pqd">
+                                                <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="25l-ef-rKR"/>
+                                                    <constraint firstAttribute="width" secondItem="Wma-0B-Pqd" secondAttribute="height" id="Khx-os-JcZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="улица Sharof Rashidov, Ташкент" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfU-Ii-gw0">
+                                                <rect key="frame" x="32" y="5.5" width="203" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="30x-gM-dfD">
+                                        <rect key="frame" x="0.0" y="34" width="235" height="28"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueDot" translatesAutoresizingMaskIntoConstraints="NO" id="StX-cV-GN9">
+                                                <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="H1u-Ia-jXO"/>
+                                                    <constraint firstAttribute="width" secondItem="StX-cV-GN9" secondAttribute="height" id="LeF-x1-A2p"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5a улица Асадуллы Ходжаева" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P78-jF-loR">
+                                                <rect key="frame" x="32" y="5.5" width="203" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txR-fF-sN7">
+                                <rect key="frame" x="0.0" y="86" width="345" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21:36 - 22:12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3q-iq-goi">
+                                        <rect key="frame" x="20" y="12" width="84.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="e3q-iq-goi" firstAttribute="top" secondItem="txR-fF-sN7" secondAttribute="top" constant="12" id="4mh-Nj-Z9Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="e3q-iq-goi" secondAttribute="bottom" constant="12" id="5es-Ei-qbd"/>
+                                    <constraint firstItem="e3q-iq-goi" firstAttribute="leading" secondItem="txR-fF-sN7" secondAttribute="leading" constant="20" id="NLF-63-ndr"/>
+                                    <constraint firstAttribute="height" constant="42" id="Zbu-Kt-kHd"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businesCar" translatesAutoresizingMaskIntoConstraints="NO" id="wKB-wJ-w20">
+                                <rect key="frame" x="227" y="76" width="108" height="39"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="txR-fF-sN7" firstAttribute="leading" secondItem="Lu6-KQ-tdr" secondAttribute="leading" id="DOe-Yz-Rcq"/>
+                            <constraint firstAttribute="trailing" secondItem="txR-fF-sN7" secondAttribute="trailing" id="Nj6-wb-VWS"/>
+                            <constraint firstItem="Ek7-2J-Im5" firstAttribute="leading" secondItem="Lu6-KQ-tdr" secondAttribute="leading" constant="12" id="RZN-0T-tvP"/>
+                            <constraint firstAttribute="bottom" secondItem="txR-fF-sN7" secondAttribute="bottom" id="T6e-ll-cw9"/>
+                            <constraint firstAttribute="trailing" secondItem="wKB-wJ-w20" secondAttribute="trailing" constant="10" id="X61-t4-VgA"/>
+                            <constraint firstItem="Ek7-2J-Im5" firstAttribute="top" secondItem="Lu6-KQ-tdr" secondAttribute="top" constant="12" id="ojO-oA-sRq"/>
+                            <constraint firstAttribute="bottom" secondItem="wKB-wJ-w20" secondAttribute="bottom" constant="13" id="trr-AC-daF"/>
+                            <constraint firstItem="txR-fF-sN7" firstAttribute="top" secondItem="Ek7-2J-Im5" secondAttribute="bottom" constant="12" id="vNu-xQ-Xbg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Lu6-KQ-tdr" secondAttribute="trailing" constant="16" id="647-n2-ifK"/>
+                    <constraint firstAttribute="bottom" secondItem="Lu6-KQ-tdr" secondAttribute="bottom" constant="8" id="6sj-5w-Zdk"/>
+                    <constraint firstItem="Lu6-KQ-tdr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ugo-gG-Tph"/>
+                    <constraint firstItem="Lu6-KQ-tdr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qUr-3C-qIl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="carImg" destination="wKB-wJ-w20" id="BT2-CD-cUo"/>
+                <outlet property="containerView" destination="Lu6-KQ-tdr" id="6Sj-X9-UUR"/>
+                <outlet property="fromLbl" destination="MfU-Ii-gw0" id="sCb-w5-Haz"/>
+                <outlet property="timeLbl" destination="e3q-iq-goi" id="Ym7-wj-d4x"/>
+                <outlet property="toLbl" destination="P78-jF-loR" id="uep-45-GK2"/>
+            </connections>
+            <point key="canvasLocation" x="-89" y="140"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blueDot" width="24" height="24"/>
+        <image name="businesCar" width="108" height="39"/>
+        <image name="redDot" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

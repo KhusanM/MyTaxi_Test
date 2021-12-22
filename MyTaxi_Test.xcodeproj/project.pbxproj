@@ -7,23 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B8428A9E74DC367766A610C /* Pods_MyTaxi_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA298134C273775C9C3594C /* Pods_MyTaxi_Test.framework */; };
 		D0036342276F4A3400AA31BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036341276F4A3400AA31BA /* AppDelegate.swift */; };
-		D0036344276F4A3400AA31BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036343276F4A3400AA31BA /* SceneDelegate.swift */; };
-		D0036346276F4A3400AA31BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036345276F4A3400AA31BA /* ViewController.swift */; };
-		D0036349276F4A3400AA31BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0036347276F4A3400AA31BA /* Main.storyboard */; };
 		D003634B276F4A3600AA31BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D003634A276F4A3600AA31BA /* Assets.xcassets */; };
-		D003634E276F4A3600AA31BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D003634C276F4A3600AA31BA /* LaunchScreen.storyboard */; };
+		D003635B276F4B2F00AA31BA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036359276F4B2F00AA31BA /* MainVC.swift */; };
+		D003635C276F4B2F00AA31BA /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003635A276F4B2F00AA31BA /* MainVC.xib */; };
+		D0AB5FAE2770E568003F2DFC /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FAD2770E568003F2DFC /* Extention.swift */; };
+		D0AB5FB12770E6C5003F2DFC /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FAF2770E6C5003F2DFC /* SlideMenuVC.swift */; };
+		D0AB5FB22770E6C5003F2DFC /* SlideMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AB5FB02770E6C5003F2DFC /* SlideMenuVC.xib */; };
+		D0AB5FB52770EC13003F2DFC /* TripHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FB32770EC13003F2DFC /* TripHistoryVC.swift */; };
+		D0AB5FB62770EC13003F2DFC /* TripHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AB5FB42770EC13003F2DFC /* TripHistoryVC.xib */; };
+		D0AB5FBF2772075C003F2DFC /* TripHistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FBD2772075C003F2DFC /* TripHistoryTVC.swift */; };
+		D0AB5FC02772075C003F2DFC /* TripHistoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AB5FBE2772075C003F2DFC /* TripHistoryTVC.xib */; };
+		D0AB5FC227720BD2003F2DFC /* TripHistoryDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FC127720BD2003F2DFC /* TripHistoryDM.swift */; };
+		D0AB5FC527722C35003F2DFC /* TripDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FC327722C35003F2DFC /* TripDetailVC.swift */; };
+		D0AB5FC627722C35003F2DFC /* TripDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AB5FC427722C35003F2DFC /* TripDetailVC.xib */; };
+		D0AB5FC927722D7F003F2DFC /* TripDetailChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AB5FC727722D7F003F2DFC /* TripDetailChildVC.swift */; };
+		D0AB5FCA27722D7F003F2DFC /* TripDetailChildVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AB5FC827722D7F003F2DFC /* TripDetailChildVC.xib */; };
+		D0ADB8FC2772F81200BF7081 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8F52772F7F400BF7081 /* Lato-Medium.ttf */; };
+		D0ADB8FF2772F81200BF7081 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8ED2772F7F200BF7081 /* Lato-Thin.ttf */; };
+		D0ADB9002772F81200BF7081 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8F22772F7F300BF7081 /* Lato-Bold.ttf */; };
+		D0ADB9032772F81300BF7081 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8F62772F7F400BF7081 /* Lato-Light.ttf */; };
+		D0ADB9042772F81300BF7081 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8F92772F7F500BF7081 /* Lato-Semibold.ttf */; };
+		D0ADB9062772F81300BF7081 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8F82772F7F500BF7081 /* Lato-Regular.ttf */; };
+		D0ADB9082772F81300BF7081 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8E82772F7F100BF7081 /* Lato-Black.ttf */; };
+		D0ADB90B2772F81300BF7081 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB8F12772F7F300BF7081 /* Lato-Heavy.ttf */; };
+		D0ADB90D2772FB4500BF7081 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0ADB90C2772FB4500BF7081 /* SFProText-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ABEC27B88904E7E8B9C10FDA /* Pods-MyTaxi_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi_Test.release.xcconfig"; path = "Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test.release.xcconfig"; sourceTree = "<group>"; };
+		ACA298134C273775C9C3594C /* Pods_MyTaxi_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxi_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D003633E276F4A3400AA31BA /* MyTaxi_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxi_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0036341276F4A3400AA31BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0036343276F4A3400AA31BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0036345276F4A3400AA31BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0036348276F4A3400AA31BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D003634A276F4A3600AA31BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D003634D276F4A3600AA31BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D003634F276F4A3600AA31BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0036359276F4B2F00AA31BA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		D003635A276F4B2F00AA31BA /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		D0AB5FAD2770E568003F2DFC /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		D0AB5FAF2770E6C5003F2DFC /* SlideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
+		D0AB5FB02770E6C5003F2DFC /* SlideMenuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideMenuVC.xib; sourceTree = "<group>"; };
+		D0AB5FB32770EC13003F2DFC /* TripHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryVC.swift; sourceTree = "<group>"; };
+		D0AB5FB42770EC13003F2DFC /* TripHistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripHistoryVC.xib; sourceTree = "<group>"; };
+		D0AB5FBD2772075C003F2DFC /* TripHistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryTVC.swift; sourceTree = "<group>"; };
+		D0AB5FBE2772075C003F2DFC /* TripHistoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripHistoryTVC.xib; sourceTree = "<group>"; };
+		D0AB5FC127720BD2003F2DFC /* TripHistoryDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHistoryDM.swift; sourceTree = "<group>"; };
+		D0AB5FC327722C35003F2DFC /* TripDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailVC.swift; sourceTree = "<group>"; };
+		D0AB5FC427722C35003F2DFC /* TripDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailVC.xib; sourceTree = "<group>"; };
+		D0AB5FC727722D7F003F2DFC /* TripDetailChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailChildVC.swift; sourceTree = "<group>"; };
+		D0AB5FC827722D7F003F2DFC /* TripDetailChildVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailChildVC.xib; sourceTree = "<group>"; };
+		D0ADB8E82772F7F100BF7081 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		D0ADB8ED2772F7F200BF7081 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		D0ADB8F12772F7F300BF7081 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		D0ADB8F22772F7F300BF7081 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		D0ADB8F52772F7F400BF7081 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		D0ADB8F62772F7F400BF7081 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		D0ADB8F82772F7F500BF7081 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		D0ADB8F92772F7F500BF7081 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		D0ADB90C2772FB4500BF7081 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		F813007AE53578D6DFF0489E /* Pods-MyTaxi_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxi_Test.debug.xcconfig"; path = "Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8428A9E74DC367766A610C /* Pods_MyTaxi_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE5021FE57924B06148DFEFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA298134C273775C9C3594C /* Pods_MyTaxi_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0036335276F4A3400AA31BA = {
 			isa = PBXGroup;
 			children = (
 				D0036340276F4A3400AA31BA /* MyTaxi_Test */,
 				D003633F276F4A3400AA31BA /* Products */,
+				EFDDD0B52DA6A01B32B86314 /* Pods */,
+				CE5021FE57924B06148DFEFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +110,98 @@
 			isa = PBXGroup;
 			children = (
 				D0036341276F4A3400AA31BA /* AppDelegate.swift */,
-				D0036343276F4A3400AA31BA /* SceneDelegate.swift */,
-				D0036345276F4A3400AA31BA /* ViewController.swift */,
-				D0036347276F4A3400AA31BA /* Main.storyboard */,
+				D0036358276F4B1000AA31BA /* Helper */,
+				D0036357276F4B0A00AA31BA /* Model */,
+				D0036356276F4B0000AA31BA /* View */,
+				D0036355276F4AF500AA31BA /* Controller */,
 				D003634A276F4A3600AA31BA /* Assets.xcassets */,
-				D003634C276F4A3600AA31BA /* LaunchScreen.storyboard */,
 				D003634F276F4A3600AA31BA /* Info.plist */,
 			);
 			path = MyTaxi_Test;
+			sourceTree = "<group>";
+		};
+		D0036355276F4AF500AA31BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB5FB8277206EF003F2DFC /* TVC */,
+				D0036359276F4B2F00AA31BA /* MainVC.swift */,
+				D0AB5FAF2770E6C5003F2DFC /* SlideMenuVC.swift */,
+				D0AB5FB32770EC13003F2DFC /* TripHistoryVC.swift */,
+				D0AB5FC327722C35003F2DFC /* TripDetailVC.swift */,
+				D0AB5FC727722D7F003F2DFC /* TripDetailChildVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0036356276F4B0000AA31BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB5FB7277206E8003F2DFC /* TVC */,
+				D003635A276F4B2F00AA31BA /* MainVC.xib */,
+				D0AB5FB02770E6C5003F2DFC /* SlideMenuVC.xib */,
+				D0AB5FB42770EC13003F2DFC /* TripHistoryVC.xib */,
+				D0AB5FC427722C35003F2DFC /* TripDetailVC.xib */,
+				D0AB5FC827722D7F003F2DFC /* TripDetailChildVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0036357276F4B0A00AA31BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB5FC127720BD2003F2DFC /* TripHistoryDM.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0036358276F4B1000AA31BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D0ADB8E72772F7DB00BF7081 /* font */,
+				D0AB5FAD2770E568003F2DFC /* Extention.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D0AB5FB7277206E8003F2DFC /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB5FBE2772075C003F2DFC /* TripHistoryTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		D0AB5FB8277206EF003F2DFC /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB5FBD2772075C003F2DFC /* TripHistoryTVC.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		D0ADB8E72772F7DB00BF7081 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				D0ADB8E82772F7F100BF7081 /* Lato-Black.ttf */,
+				D0ADB8F22772F7F300BF7081 /* Lato-Bold.ttf */,
+				D0ADB8F12772F7F300BF7081 /* Lato-Heavy.ttf */,
+				D0ADB8F62772F7F400BF7081 /* Lato-Light.ttf */,
+				D0ADB8F52772F7F400BF7081 /* Lato-Medium.ttf */,
+				D0ADB8F82772F7F500BF7081 /* Lato-Regular.ttf */,
+				D0ADB8F92772F7F500BF7081 /* Lato-Semibold.ttf */,
+				D0ADB8ED2772F7F200BF7081 /* Lato-Thin.ttf */,
+				D0ADB90C2772FB4500BF7081 /* SFProText-Semibold.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		EFDDD0B52DA6A01B32B86314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F813007AE53578D6DFF0489E /* Pods-MyTaxi_Test.debug.xcconfig */,
+				ABEC27B88904E7E8B9C10FDA /* Pods-MyTaxi_Test.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0036352276F4A3600AA31BA /* Build configuration list for PBXNativeTarget "MyTaxi_Test" */;
 			buildPhases = (
+				8C2BC29876F8DE3399062812 /* [CP] Check Pods Manifest.lock */,
 				D003633A276F4A3400AA31BA /* Sources */,
 				D003633B276F4A3400AA31BA /* Frameworks */,
 				D003633C276F4A3400AA31BA /* Resources */,
+				E12A742CF950843E2394F92B /* [CP] Copy Pods Resources */,
+				68CBA843688570A40D96118F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +265,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D003634E276F4A3600AA31BA /* LaunchScreen.storyboard in Resources */,
+				D0ADB9032772F81300BF7081 /* Lato-Light.ttf in Resources */,
+				D0AB5FC627722C35003F2DFC /* TripDetailVC.xib in Resources */,
 				D003634B276F4A3600AA31BA /* Assets.xcassets in Resources */,
-				D0036349276F4A3400AA31BA /* Main.storyboard in Resources */,
+				D003635C276F4B2F00AA31BA /* MainVC.xib in Resources */,
+				D0ADB9082772F81300BF7081 /* Lato-Black.ttf in Resources */,
+				D0ADB9062772F81300BF7081 /* Lato-Regular.ttf in Resources */,
+				D0AB5FCA27722D7F003F2DFC /* TripDetailChildVC.xib in Resources */,
+				D0ADB90B2772F81300BF7081 /* Lato-Heavy.ttf in Resources */,
+				D0ADB90D2772FB4500BF7081 /* SFProText-Semibold.ttf in Resources */,
+				D0ADB8FC2772F81200BF7081 /* Lato-Medium.ttf in Resources */,
+				D0ADB9002772F81200BF7081 /* Lato-Bold.ttf in Resources */,
+				D0ADB9042772F81300BF7081 /* Lato-Semibold.ttf in Resources */,
+				D0AB5FB22770E6C5003F2DFC /* SlideMenuVC.xib in Resources */,
+				D0AB5FC02772075C003F2DFC /* TripHistoryTVC.xib in Resources */,
+				D0AB5FB62770EC13003F2DFC /* TripHistoryVC.xib in Resources */,
+				D0ADB8FF2772F81200BF7081 /* Lato-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68CBA843688570A40D96118F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C2BC29876F8DE3399062812 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTaxi_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12A742CF950843E2394F92B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTaxi_Test/Pods-MyTaxi_Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D003633A276F4A3400AA31BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0036346276F4A3400AA31BA /* ViewController.swift in Sources */,
+				D0AB5FC527722C35003F2DFC /* TripDetailVC.swift in Sources */,
+				D0AB5FC227720BD2003F2DFC /* TripHistoryDM.swift in Sources */,
 				D0036342276F4A3400AA31BA /* AppDelegate.swift in Sources */,
-				D0036344276F4A3400AA31BA /* SceneDelegate.swift in Sources */,
+				D0AB5FBF2772075C003F2DFC /* TripHistoryTVC.swift in Sources */,
+				D0AB5FAE2770E568003F2DFC /* Extention.swift in Sources */,
+				D003635B276F4B2F00AA31BA /* MainVC.swift in Sources */,
+				D0AB5FB12770E6C5003F2DFC /* SlideMenuVC.swift in Sources */,
+				D0AB5FB52770EC13003F2DFC /* TripHistoryVC.swift in Sources */,
+				D0AB5FC927722D7F003F2DFC /* TripDetailChildVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D0036347276F4A3400AA31BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0036348276F4A3400AA31BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D003634C276F4A3600AA31BA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D003634D276F4A3600AA31BA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D0036350276F4A3600AA31BA /* Debug */ = {
@@ -217,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +483,7 @@
 		};
 		D0036353276F4A3600AA31BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F813007AE53578D6DFF0489E /* Pods-MyTaxi_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,9 +493,9 @@
 				INFOPLIST_FILE = MyTaxi_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,12 +505,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D0036354276F4A3600AA31BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEC27B88904E7E8B9C10FDA /* Pods-MyTaxi_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +521,9 @@
 				INFOPLIST_FILE = MyTaxi_Test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +533,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
