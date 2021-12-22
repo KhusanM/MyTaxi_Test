@@ -72,7 +72,7 @@ extension TripHistoryVC: UITableViewDelegate, UITableViewDataSource {
             label.text = tripData[section].date
             label.textColor = #colorLiteral(red: 0.3321701288, green: 0.3321786821, blue: 0.3321741223, alpha: 1)
             label.textAlignment = .left
-            label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+            label.font = UIFont(name: "Lato-Heavy", size: 24)
 
             let containerView = UIView()
             containerView.addSubview(label)
@@ -122,7 +122,7 @@ extension TripHistoryVC {
            
             let firstLabel = UILabel(frame: firstFrame)
             firstLabel.text = "Мои поездки"
-            firstLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+            firstLabel.font = UIFont(name: "Lato-Semibold", size: 20)
             
             navigationBar.addSubview(firstLabel)
             

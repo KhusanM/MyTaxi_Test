@@ -42,7 +42,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         title = "Main"
         self.view.makeCorner(withRadius: 20)
-        //forMapView()
+        forMapView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,7 +62,7 @@ class MainVC: UIViewController {
 
     @IBAction func hamburgerBtnTapped(_ sender: Any) {
         self.sideMenuViewController?.contentViewScaleValue = 0.8
-        self.sideMenuViewController?.contentViewInPortraitOffsetCenterX = 115
+        self.sideMenuViewController?.contentViewInPortraitOffsetCenterX = CGFloat(UIScreen.main.bounds.width * 0.25)
         
         self.sideMenuViewController?.bouncesHorizontally = false
         
