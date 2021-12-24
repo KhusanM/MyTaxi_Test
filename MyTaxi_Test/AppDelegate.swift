@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Make it a root controller
         self.window!.rootViewController = sideMenuViewController
         
-        self.window!.backgroundColor = UIColor.white
+        self.window!.backgroundColor = #colorLiteral(red: 0.1058823529, green: 0.1058823529, blue: 0.09803921569, alpha: 1)
         
         window?.makeKeyAndVisible()
         

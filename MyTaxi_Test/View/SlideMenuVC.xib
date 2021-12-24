@@ -85,43 +85,67 @@ Normukhammadov</string>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qZp-71-mBa">
-                    <rect key="frame" x="28" y="206" width="298" height="152"/>
+                    <rect key="frame" x="18" y="206" width="308" height="152"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye5-5S-DFt">
-                            <rect key="frame" x="0.0" y="0.0" width="298" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye5-5S-DFt" customClass="HighlightButton" customModule="MyTaxi_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="308" height="50"/>
                             <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="zQe-oe-nDg"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
-                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Мои поездки" image="Direction#2">
                                 <color key="titleColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                    <color key="value" red="0.1058823529" green="0.1058823529" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.068721745969999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="myTripsBtnTapped:" destination="-1" eventType="touchUpInside" id="zLU-Dw-mfP"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-ZR-4Ru">
-                            <rect key="frame" x="0.0" y="51" width="298" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-ZR-4Ru" customClass="HighlightButton" customModule="MyTaxi_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="51" width="308" height="50"/>
                             <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
-                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Способы оплаты " image="Wallet#2">
                                 <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                    <color key="value" red="0.1058823529" green="0.1058823529" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.068721745969999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-CK-eoQ">
-                            <rect key="frame" x="0.0" y="102" width="298" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-CK-eoQ" customClass="HighlightButton" customModule="MyTaxi_Test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="102" width="308" height="50"/>
                             <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
-                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Избранные адреса" image="Half-start">
                                 <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                    <color key="value" red="0.1058823529" green="0.1058823529" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.068721745969999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,7 +159,7 @@ Normukhammadov</string>
                 <constraint firstItem="qZp-71-mBa" firstAttribute="top" secondItem="3gf-XU-iGK" secondAttribute="bottom" constant="22" id="TaV-tv-5Yt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3gf-XU-iGK" secondAttribute="trailing" constant="76" id="ivl-HX-DZY"/>
                 <constraint firstItem="3gf-XU-iGK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="rRH-7l-faV"/>
-                <constraint firstItem="qZp-71-mBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="za0-2y-EIj"/>
+                <constraint firstItem="qZp-71-mBa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="za0-2y-EIj"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
         </view>

@@ -42,7 +42,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         title = "Main"
         self.view.makeCorner(withRadius: 20)
-        forMapView()
+        //forMapView()
     }
     
     override func viewWillAppear(_ animated: Bool) {

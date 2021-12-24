@@ -711,6 +711,17 @@
             <point key="canvasLocation" x="216" y="1"/>
         </view>
     </objects>
+    <designables>
+        <designable name="5Zt-1v-3jQ">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="BfY-Na-k2f">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Pig-vy-wPv">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Ellipse 11" width="60" height="60"/>
         <image name="Group 21250" width="24" height="24"/>
