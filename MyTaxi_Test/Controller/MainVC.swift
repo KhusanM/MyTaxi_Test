@@ -8,11 +8,13 @@
 import UIKit
 import GoogleMaps
 import AKSideMenu
+import CoreLocation
+
 
 class MainVC: UIViewController {
 
     
-    @IBOutlet weak var mapView: UIView!
+    @IBOutlet weak var mapView: GMSMapView!
     
     @IBOutlet weak var hamburgerBtn: UIButton! {
         didSet {
@@ -30,6 +32,8 @@ class MainVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var whereFromBtn: HighlightButton!
+    
     @IBOutlet weak var addressStackView: UIStackView! {
         didSet {
             addressStackView.layer.cornerRadius = 12
@@ -37,13 +41,18 @@ class MainVC: UIViewController {
         }
     }
     
+    let geocoder = GMSGeocoder()
+    
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main"
         self.view.makeCorner(withRadius: 20)
-        //forMapView()
+        forMapView()
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -55,11 +64,36 @@ class MainVC: UIViewController {
         navigationController?.navigationBar.isHidden = false
     }
 
-    func forMapView(){
-        let map = GMSMapView(frame: UIScreen.main.bounds, camera: GMSCameraPosition(latitude: 41.311081, longitude: 69.240562, zoom: 15))
-        mapView.addSubview(map)
+    func forMapView() {
+        self.mapView?.isMyLocationEnabled = true
+        self.mapView.delegate = self
+        self.locationManager.delegate = self
+        self.locationManager.startUpdatingLocation()
     }
-
+    
+    func getLocationName(lat: Double, lon: Double) {
+        
+        let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        geocoder.reverseGeocodeCoordinate(position) { response, error in
+            
+            if error != nil {
+                print("reverse geodcode fail: \(error!.localizedDescription)")
+            } else {
+                if let places = response?.results() {
+                    if let place = places.first {
+                        if let lines = place.lines {
+                            self.whereFromBtn.setTitle(lines.first ?? "Aniqlanmadi", for: .normal)
+                        }
+                    } else {
+                        print("GEOCODE: nil first in places")
+                    }
+                } else {
+                    print("GEOCODE: nil in places")
+                }
+            }
+        }
+    }
+    
     @IBAction func hamburgerBtnTapped(_ sender: Any) {
         self.sideMenuViewController?.contentViewScaleValue = 0.8
         self.sideMenuViewController?.contentViewInPortraitOffsetCenterX = CGFloat(UIScreen.main.bounds.width * 0.25)
@@ -74,10 +108,36 @@ class MainVC: UIViewController {
     }
     
     @IBAction func locationBtnTapped(_ sender: Any) {
-        
+        mapView.moveCamera(GMSCameraUpdate.setTarget(CLLocationCoordinate2D(latitude: (mapView.myLocation?.coordinate.latitude)!, longitude: (mapView.myLocation?.coordinate.longitude)!), zoom: 17))
     }
     
 
+}
+
+//MARK: - GMSMapViewDelegate
+extension MainVC: GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        getLocationName(lat: mapView.camera.target.latitude, lon: mapView.camera.target.longitude)
+    }
+    
+    
+}
+
+//MARK: - Location Manager Delegate
+extension MainVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        let location = locations.last
+
+        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
+
+        self.mapView?.animate(to: camera)
+
+        self.locationManager.stopUpdatingLocation()
+
+    }
+    
+    
 }
 
 extension MainVC: SlideMenuDelegate {
