@@ -7,10 +7,11 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
 class TripDetailVC: UIViewController {
 
-    @IBOutlet weak var mapView: UIView!
+    @IBOutlet weak var mapView: GMSMapView!
     
     @IBOutlet weak var dismissBtn: UIButton! {
         didSet {
@@ -18,6 +19,8 @@ class TripDetailVC: UIViewController {
             dismissBtn.layer.cornerRadius = 18
         }
     }
+    
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +30,11 @@ class TripDetailVC: UIViewController {
         }
     }
 
-    func forMapView(){
-        let map = GMSMapView(frame: UIScreen.main.bounds, camera: GMSCameraPosition(latitude: 41.311081, longitude: 69.240562, zoom: 15))
-        mapView.addSubview(map)
+    func forMapView() {
+        self.locationManager.delegate = self
+        self.locationManager.startUpdatingLocation()
     }
-
+    
     func forChildVC() {
         let vc = TripDetailChildVC(nibName: "TripDetailChildVC", bundle: nil)
         if #available(iOS 15.0, *) {
@@ -41,9 +44,9 @@ class TripDetailVC: UIViewController {
                 sheet.largestUndimmedDetentIdentifier = .medium
                 sheet.preferredCornerRadius = 18
             }
-            print("as")
             present(vc, animated: true, completion: nil)
         } else {
+            present(vc, animated: true, completion: nil)
         }
         
     }
@@ -52,5 +55,20 @@ class TripDetailVC: UIViewController {
         dismiss(animated: false) {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+}
+
+//MARK: - Location Manager Delegate
+extension TripDetailVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        let location = locations.last
+
+        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
+
+        self.mapView?.animate(to: camera)
+
+        self.locationManager.stopUpdatingLocation()
+
     }
 }

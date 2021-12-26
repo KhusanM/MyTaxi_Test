@@ -48,11 +48,14 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main"
-        self.view.makeCorner(withRadius: 20)
+        
         forMapView()
+        
+        if UIScreen.main.bounds.height > 670 {
+            self.view.makeCorner(withRadius: 20)
+        }
+        
     }
-    
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -82,13 +85,9 @@ class MainVC: UIViewController {
                 if let places = response?.results() {
                     if let place = places.first {
                         if let lines = place.lines {
-                            self.whereFromBtn.setTitle(lines.first ?? "Aniqlanmadi", for: .normal)
+                            self.whereFromBtn.setTitle(lines.first ?? "Not Found", for: .normal)
                         }
-                    } else {
-                        print("GEOCODE: nil first in places")
                     }
-                } else {
-                    print("GEOCODE: nil in places")
                 }
             }
         }
@@ -136,8 +135,6 @@ extension MainVC: CLLocationManagerDelegate {
         self.locationManager.stopUpdatingLocation()
 
     }
-    
-    
 }
 
 extension MainVC: SlideMenuDelegate {
